@@ -521,7 +521,7 @@ body {
 
     .modal-close-btn {
       background-color: black;
-      margin-right: 50px;
+      margin-right: 55px;
     }
     
     .modal-body {
@@ -543,6 +543,9 @@ body {
       width: 100%;
     }
 
+    .modal-my-education {
+      margin-left: 38px;
+    }
     
     
     display: block;

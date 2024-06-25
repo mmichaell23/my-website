@@ -53,13 +53,3 @@ function animateProgressBars() {
       }, 100); 
   });
 }
-
-var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-
-
-var tabTriggerList = document.querySelectorAll('[data-bs-toggle="tab"]');
-tabTriggerList.forEach(function (tabTrigger) {
-   new bootstrap.Tab(tabTrigger);
-});
-
-
