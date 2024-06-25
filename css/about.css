@@ -523,6 +523,13 @@ body {
       background-color: black;
       margin-right: 50px;
     }
+    
+    .modal-body {
+      overflow-x: hidden;
+    }
+    .nav-link {
+        white-space: nowrap;
+    }
 
     .header-home {
       margin-left: -185px;
@@ -531,7 +538,13 @@ body {
     .header-name {
       margin-left: 40px;
     }
-   
+
+    .progress {
+      width: 100%;
+    }
+
+    
+    
     display: block;
   }
   
