@@ -170,8 +170,8 @@ img {
   --bs-nav-underline-gap: 1rem;
   --bs-nav-underline-border-width: 0.125rem;
   --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
-  --myappnav-active-color: white; /* Add this line for active link color */
-  --myappnav-active-underline-color: white; /* Add this line for active underline color */
+  --myappnav-active-color: white; 
+  --myappnav-active-underline-color: white; 
   gap: var(--bs-nav-underline-gap);
 }
 .nav-underline .nav-link {
@@ -185,8 +185,8 @@ img {
 .nav-underline .nav-link.active,
 .nav-underline .show > .nav-link {
   font-weight: 700;
-  color: var(--myappnav-active-color); /* Change to white */
-  border-bottom-color: var(--myappnav-active-underline-color); /* Change to black */
+  color: var(--myappnav-active-color); 
+  border-bottom-color: var(--myappnav-active-underline-color); 
 }
 
 .nav-fill > .nav-link,

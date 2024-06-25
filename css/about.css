@@ -218,8 +218,8 @@ body {
   --bs-nav-underline-gap: 1rem;
   --bs-nav-underline-border-width: 0.125rem;
   --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
-  --myappnav-active-color: white; /* Add this line for active link color */
-  --myappnav-active-underline-color: white; /* Add this line for active underline color */
+  --myappnav-active-color: white; 
+  --myappnav-active-underline-color: white; 
   gap: var(--bs-nav-underline-gap);
 }
 .nav-underline .nav-link {
@@ -233,8 +233,8 @@ body {
 .nav-underline .nav-link.active,
 .nav-underline .show > .nav-link {
   font-weight: 700;
-  color: var(--myappnav-active-color); /* Change to white */
-  border-bottom-color: var(--myappnav-active-underline-color); /* Change to black */
+  color: var(--myappnav-active-color); 
+  border-bottom-color: var(--myappnav-active-underline-color); 
 }
 
 .nav-fill > .nav-link,
@@ -311,9 +311,10 @@ body {
 }
 
 .modal-content {
-  background-color: #000; /* Black background */
-  color: #fff !important;/* White text color */
+  background-color: #000; 
+  color: #fff !important;
 }
+
 
 /* if desktop */
 .mobile_device_380px {
@@ -491,16 +492,15 @@ body {
     }
 
     .modal-dialog {
-      width: 95%; /* Adjust width as needed */
-      margin: 1.75rem auto; /* Center the modal vertically */
+      width: 95%; 
+      margin: 1.75rem auto; 
     }
     .modal-content {
-      color: #fff; /* Make sure text color is white */
+      color: #fff; 
       margin-left: 0px;
-      padding: 10px; /* Adjust padding as needed */
     }
     .modal-header, .modal-body, .modal-footer {
-      padding: 50px; /* Adjust padding as needed */
+      padding: 50px;
     }
 
     .modal-nav {
@@ -513,10 +513,25 @@ body {
       margin-right: 30px;
     }
 
- 
+    .modal-title {
+      margin-left: 60px;
+    }
 
     .modal-info {
       margin-right: -20px;
+    }
+
+    .modal-close-btn {
+      background-color: black;
+      margin-right: 50px;
+    }
+
+    .header-home {
+      margin-left: -185px;
+    }
+
+    .header-name {
+      margin-left: 40px;
     }
    
     display: block;
