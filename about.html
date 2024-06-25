@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/web-icon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+    <div id="content">
+        <div class="desktop">
+            <!--
+                some content and markups here. by default this is loaded in desktop
+            -->
+
+
+
+    <!-- Header -->
+    <div class="shadow-outside p-2 mb-5 --bs-light-bg-subtle header">
+        <!-- Container -->
+        <div class="d-flex">
+            <div class="w-50"> 
+                <span class="header-name">
+                    Michael
+                </span>
+            </div>
+            <ul class="nav nav-underline" role="tablist">
+                <div class="d-flex justify-content-center align-content-center align-self-center flex-wrap ">
+                    <div class="header-home">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html" type="button">
+                                Home
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="header-about">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" type="button">
+                            About
+                        </a>
+                    </li> 
+                </div>
+                <div class="resume-button">
+                    <a href="file/Michael-Tan's-profile.pdf" download="Michael-Tan's-profile.pdf">
+                        <button type="button" class="btn btn-outline-light " style="margin-top: 3px; margin-left: 5px;">
+                            Download My Resume
+                        </button>
+                    </a> 
+                </div>
+            </ul>
+
+            
+           
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="d-flex" style="margin-top: 200px; margin-left: -65px;">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-6">
+                    <div class="p-1">
+                        <p class="introduction-1">
+                            About Me
+                            <hr>
+                            <span class="introduction-2"> 
+                                <p class="text-white">
+                                    I am a programmer; I have no life
+                                </p>
+                                <hr>
+                                <p class="text-white">
+                                Currently, I'm in a college and get excited by the curriculum. 
+                                Being fascinated that I'd like is one of my nature, 
+                                thus if you have passion for something, why not go chase it, right?
+                                </p>
+                                <br>
+                                <p class="text-white">
+                                    Aside from coding, I enjoy eating  &#58 &rpar;
+                                </p>
+                            </span>
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#read-more" class="btn btn-light read-more">
+                                <span class="read-more-text">
+                                    Read More &#8594 
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-2">
+                        <div>
+                            <img src="img/pfp.png" 
+                            style="object-fit: cover;
+                            height: auto;
+                            width: 400px;
+                            margin-top: -200px;
+                            margin-left: 150px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-xl" id="read-more" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-custom">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">More About Me</h1>
+                </div>
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <nav>
+                    <div class="nav nav-underline d-flex justify-content-center" id="nav-tab " role="tablist">
+                      <button class="nav-link active w-auto p-3 text-white" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="true">My Skills</button>
+                      <button class="nav-link w-auto p-3 text-white" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">My Education</button>
+                    </div>
+                  </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab" tabindex="0">
+                        <ul>
+                            <li>JavaScript</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Java</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+                              </div>
+                            <li>C++</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                              </div>
+                            <li>HTML & CSS</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 78%"></div>
+                              </div>
+                            <li>SQL</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                              </div>
+                            <li>Unreal Engine</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Arduino</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                              </div>
+                            <li>NodeJS</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Express.JS</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Git</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+                              </div>
+                            <li>Linux</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+                              </div>
+                              <li>Robot Operating System</li>
+                              <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                                </div>
+                            <li>Pentester</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                              </div>
+                          </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab" tabindex="0">
+                        <dd> 
+                            <img src = "img/UE Logo.png" style = "width: 30px; height: 30px;" >
+                            <strong> 
+                                University of the East 
+                            </strong>
+                            <p> 
+                                Information Communication Technology, Computer Programming / Animation 
+                            </p>
+                            <h5> 
+                                Aug 2021 - May 2022 
+                            </h5>
+                            <strong> 
+                                <img src = "img/NTC Logo.png" style = "width: 30px; height: 30px;" >
+                                National Teachers College 
+                            </strong>
+                            <p> 
+                                Information Communication Technology, Computer Programming / Animation 
+                            </p>
+                
+                            <h5>
+                                Aug 2022 - Jul 2023 
+                                </h5>
+                            <strong> 
+                                Eulogio Rodriguez, Jr. High School 
+                            </strong>
+                            <p> 
+                                High School Diploma
+                             </p>
+                            <h5> 
+                                Jun 2017 - Jun 2021
+                             </h5>
+                        </dd>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <div class="d-flex justify-content-start icons-container" style="margin-left: 80px; margin-top: -45px;">
+        <div class="icon-item">
+            <a href="https://www.facebook.com/michaellorenztan23">
+                <img src="icons/facebook.png" alt="Facebook" style="object-fit: cover; height: auto; width: 80px;">
+            </a>
+        </div>
+        <div class="icon-item">
+            <a href="https://www.linkedin.com/in/michael-lorenz-tan-ab492a252">
+                <img src="icons/linkedin.png" alt="LinkedIn" style="object-fit: cover; height: auto; width: 80px; margin-left: -10px;">
+            </a>
+        </div>
+        <div class="icon-item">
+            <a href="https://github.com/mmichaell23">
+                <img src="icons/github.png" alt="GitHub" style="object-fit: cover; height: auto; width: 60px; margin-top: 8px;" >
+            </a>
+        </div>
+    </div>
+        </div>
+    
+        <div class="mobile_device_380px">
+            <!-- content and some markups for mobile -->
+
+
+        </div>
+    
+        <div class="mobile_device_480px">
+            <!-- content and some markups for mobile -->
+
+    <!-- Header -->
+    <div class="shadow-outside p-2 mb-5 --bs-light-bg-subtle header">
+        <!-- Container -->
+        <div class="d-flex">
+            <div class="w-50"> 
+                <span class="header-name">
+                    Michael
+                </span>
+            </div>
+            <ul class="nav nav-underline" role="tablist">
+                <div class="d-flex justify-content-center align-content-center align-self-center flex-wrap  ">
+                    <div class="header-home">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html" type="button">
+                                Home
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="header-about">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" type="button">
+                            About
+                        </a>
+                    </li> 
+                </div>
+                <div class="resume-button">
+                    <a href="file/Michael-Tan's-profile.pdf" download="Michael-Tan's-profile.pdf">
+                        <button type="button" class="btn btn-outline-light " style="margin-top: 3px; margin-left: 5px;">
+                            Download My Resume
+                        </button>
+                    </a> 
+                </div>
+            </ul>
+
+            
+           
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="d-flex"  style="margin-top: 200px; margin-left: -65px;">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-6 info">
+                    <div class="p-1">
+                        <p class="introduction-1">
+                            About Me
+                            <hr>
+                            <span class="introduction-2">
+                                <p class="text-white">
+                                    I am a programmer; I have no life
+                                </p>
+                                <hr>
+                                <p class="text-white">
+                                    Currently, I'm in a college and get excited by the curriculum. 
+                                    Being fascinated that I'd like is one of my nature, 
+                                    thus if you have passion for something, why not go chase it, right?
+                                </p>
+                                <br>
+                                <p class="text-white">
+                                    Aside from coding, I enjoy eating  &#58 &rpar;
+                                </p>
+                            </span>
+                        </p>
+                            </span>
+                        </p>
+                        <div class="d-flex justify-content-end read-more-button">
+                                <button type="button" class="btn btn-light read-more" data-toggle="modal" data-target="#myModal">
+                                    <span class="read-more-text">
+                                        Read More &#8594 
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-2">
+                        <div>
+                            <img src="img/pfp.png" 
+                            style="object-fit: cover;
+                            height: auto;
+                            width: 400px;
+                            margin-left: 40px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-info" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">More About Me</h5>
+            </div>
+            <div class="modal-body d-flex flex-column">
+
+    
+                
+                <nav class="modal-nav">
+                    <div class="nav nav-underline d-flex flex-row justify-content-center" id="nav-tab" role="presentation">
+                        <button class="nav-link active w-auto p-3 text-white ml-5" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="true">My Skills</button>
+                        <button class="nav-link w-auto p-3 text-white ml-5" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">My Education</button>
+                    </div>
+                </nav>
+            
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab" tabindex="0">
+                        <ul>
+                            <li>JavaScript</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Java</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+                              </div>
+                            <li>C++</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                              </div>
+                            <li>HTML & CSS</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 78%"></div>
+                              </div>
+                            <li>SQL</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                              </div>
+                            <li>Unreal Engine</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Arduino</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                              </div>
+                            <li>NodeJS</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Express.JS</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                              </div>
+                            <li>Git</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+                              </div>
+                            <li>Linux</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+                              </div>
+                              <li>Robot Operating System</li>
+                              <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                                </div>
+                            <li>Pentester</li>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                              </div>
+                          </ul>
+
+                    
+                    </div>
+                    <div class="tab-pane fade" id="nav-education-tab" role="tabpanel" aria-labelledby="nav-education-tab" tabindex="0">
+                        <dd>
+                            <img src = "img/UE Logo.png" style = "width: 30px; height: 30px;" >
+                                <strong> 
+                                    University of the East 
+                                </strong>
+                                <p> 
+                                    Information Communication Technology, Computer Programming / Animation 
+                                </p>
+                                <h5> 
+                                    Aug 2021 - May 2022 
+                                </h5>
+                                <strong> 
+                                    <img src = "img/NTC Logo.png" style = "width: 30px; height: 30px;" >
+                                    National Teachers College 
+                                </strong>
+                                <p> 
+                                    Information Communication Technology, Computer Programming / Animation 
+                                </p>
+                    
+                                <h5>
+                                    Aug 2022 - Jul 2023 
+                                    </h5>   
+                                <strong> 
+                                    Eulogio Rodriguez, Jr. High School 
+                                </strong>
+                                <p> 
+                                    High School Diploma
+                                 </p>
+                                <h5> 
+                                    Jun 2017 - Jun 2021
+                                 </h5>
+                            </dd>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-info" id="read-more" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-custom">
+                    <h1 class="modal-title fs-1" id="exampleModalLabel">More About Me</h1>
+                </div>
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- Footer -->
+    <div class="d-flex justify-content-start icons-container">
+        <div class="icon-item">
+            <a href="https://www.facebook.com/michaellorenztan23">
+                <img src="icons/facebook.png" alt="Facebook" style="object-fit: cover; height: auto; width: 80px;">
+            </a>
+        </div>
+        <div class="icon-item">
+            <a href="https://www.linkedin.com/in/michael-lorenz-tan-ab492a252">
+                <img src="icons/linkedin.png" alt="LinkedIn" style="object-fit: cover; height: auto; width: 80px; margin-left: -10px;">
+            </a>
+        </div>
+        <div class="icon-item">
+            <a href="https://github.com/mmichaell23">
+                <img src="icons/github.png" alt="GitHub" style="object-fit: cover; height: auto; width: 60px; margin-top: 8px;" >
+            </a>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
