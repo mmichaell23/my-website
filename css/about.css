@@ -154,7 +154,6 @@ body {
   }
 }
 
-
 .nav-link:hover, .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
 }
@@ -341,7 +340,7 @@ body {
 
 
 
-
+/* Styles for mobile devices with a max width of 480px */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -357,7 +356,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Styles for mobile devices with a max width of 480px */
 @media only screen and (max-width: 480px) {
   .mobile_device_480px {
     width: 100%; 
