@@ -504,6 +504,7 @@ body {
     .modal-nav {
       margin-right: 550px;
       margin-top: -50px;
+      padding-top: -100px;
     }
 
     .tab-content {
@@ -525,6 +526,7 @@ body {
     }
     
     .modal-body {
+      padding: 50px 0px 20px 0px;
       overflow-x: hidden;
     }
     .nav-link {
@@ -546,6 +548,13 @@ body {
     .modal-my-education {
       margin-left: 38px;
     }
+
+    #nav-skills-tab-mobile {
+      padding-right: 120px;
+      width: 140%;
+    }
+
+    
     
     
     display: block;
